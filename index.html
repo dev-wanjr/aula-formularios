@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <form action="" method="GET">
+            <fieldset>
+                <legend>Dados do Usuário</legend>
+                <label>Nome:</label>
+                <input type="text" placeholder="digite seu nome">
+
+                <br><br>
+
+                <label>E-mail:</label>
+                <input type="email" placeholder="digite seu e-mail">
+
+                <br><br>
+
+                <label>Senha:</label>
+                <input type="password" >
+
+                <br><br>
+                <input type="file">
+
+                <br><br>
+                <label>Sexo:</label>
+                <br>
+                <input name="sexo" type="radio"><label>Masculino</label>
+                <input name="sexo" type="radio"><label>Feminino</label>
+
+                <br><br>
+                <label>Habilidades:</label>
+                <br>
+                <input name="habilidades" type="checkbox" value="html" id="for"><label for="html">HTML</label>
+                <br><br>
+
+                <input name="habilidades" type="checkbox" value="css" id="css"><label for="css">CSS</label>
+                <br><br>
+
+                <input name="habilidades" type="checkbox" value="javascript" id="javascript"><label for="javascript">JavaScript</label>
+                <br><br>
+
+                <label>Cidades:</label>
+                <br>
+                <select name="cidade">
+                    <option selected>-- Selecione --</option>
+                    <option value="São Paulo">São Paulo</option>
+                    <option value="Minas Gerais">Minas Gerais</option>
+                    <option value="Santa Catarina">Santa Catarina</option>
+                    <option value="Curitiba" >Curitiba</option>
+                </select>
+
+                <br><br>
+
+                <label>Carro</label>
+                <br>
+                <select>
+                    <optgroup label="Honda">
+                        <option value="Civic">Civic</option>
+                    </optgroup>
+
+                    <optgroup label="GM">
+                        <option value="Celta">Cleta</option>
+                    </optgroup>
+                    
+                    <optgroup label="Fiat">
+                        <option value="Uno">Uno</option>
+                    </optgroup>
+                </select>
+
+                <br><br>
+
+                <label>Digite sua fruta preferida:</label>
+                <input list="listaFrutas" type="text" name="frutas" placeholder="Digite a fruta">
+
+                <datalist id="listaFrutas">
+                    <option value="Abacate">
+                    <option value="Abacaxi">
+                    <option value="Açai">
+                    <option value="Acerola">                                  
+                </datalist>
+
+                <br><br>
+
+                <labe>Digite uma mensagem:</labe>
+                <br>
+                <textarea name="mensagem" id="" cols="50" rows="10"></textarea>
+
+
+                <br><br>
+                <button>Enviar</button>
+            </fieldset>
+        </form>
+    </body>
+</html>
